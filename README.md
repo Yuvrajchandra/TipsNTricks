@@ -26,4 +26,12 @@ This repository includes various tips and tricks to solve different Coding Quest
   ```  
   
 ---
+
++ ### To declare an integer with maximum / minimum value  
+  ```  
+    int max = INT_MAX;  
+    int min = INT_MIN;  
+  ```  
+  
+---
     
