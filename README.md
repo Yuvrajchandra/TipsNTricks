@@ -78,11 +78,10 @@ This repository includes various tips and tricks to solve different Coding Quest
   { 
     if (n < 0) 
         return 0; 
-    // base case 
     if (n <= 1) 
         return 1; 
-    // Use Kamenetsky formula to calculate 
-    // the number of digits 
+        
+    // Use Kamenetsky formula to calculate the number of digits 
     double x = ((n * log10(n / M_E) +  
                  log10(2 * M_PI * n) / 
                  2.0)); 
