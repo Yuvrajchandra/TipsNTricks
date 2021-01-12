@@ -68,10 +68,10 @@ This repository includes various tips and tricks to solve different Coding Quest
   We can use Kamenetsky’s formula to find our answer !
 
   It approximates the number of digits in a factorial by :
-  f(x) =    log10( ((n/e)^n) * sqrt(2*pi*n))
+  f(x) =    log10( ((n/e)^n) * sqrt(2 * pi * n))
 
   Thus, we can pretty easily use the property of logarithms to,
-  f(x) = n* log10(( n/ e)) + log10(2*pi*n)/2
+  f(x) = n * log10(( n/ e)) + log10(2 * pi * n)/2
   
   ```
   long long findDigits(int n) 
@@ -82,9 +82,7 @@ This repository includes various tips and tricks to solve different Coding Quest
         return 1; 
         
     // Use Kamenetsky formula to calculate the number of digits 
-    double x = ((n * log10(n / M_E) +  
-                 log10(2 * M_PI * n) / 
-                 2.0)); 
+    double x = ((n * log10(n / M_E) +  log10(2 * M_PI * n) / 2.0)); 
   
     return floor(x) + 1; 
   } 
