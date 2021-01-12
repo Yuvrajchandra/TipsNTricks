@@ -76,15 +76,11 @@ This repository includes various tips and tricks to solve different Coding Quest
   ```
   long long findDigits(int n) 
   { 
-    // factorial of -ve number  
-    // doesn't exists 
     if (n < 0) 
         return 0; 
-  
     // base case 
     if (n <= 1) 
         return 1; 
-  
     // Use Kamenetsky formula to calculate 
     // the number of digits 
     double x = ((n * log10(n / M_E) +  
